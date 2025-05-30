@@ -1,0 +1,207 @@
+{
+  "equipos" : [ {
+    "id" : "RM001",
+    "nombre" : "Real Madrid",
+    "barrio" : "Chamartín",
+    "nombreEntrenador" : "Carlo Ancelotti",
+    "jugadores" : [ {
+      "id" : "JRM001",
+      "nombreCompleto" : "Karim Benzema",
+      "posicion" : "Delantero",
+      "numeroCamiseta" : 9,
+      "equipo" : "RM001"
+    }, {
+      "id" : "JRM002",
+      "nombreCompleto" : "Luka Modric",
+      "posicion" : "Mediocampista",
+      "numeroCamiseta" : 10,
+      "equipo" : "RM001"
+    }, {
+      "id" : "JRM003",
+      "nombreCompleto" : "Thibaut Courtois",
+      "posicion" : "Portero",
+      "numeroCamiseta" : 1,
+      "equipo" : "RM001"
+    } ],
+    "partidos" : [ {
+      "id" : "P001",
+      "equipoLocal" : "RM001",
+      "equipoVisitante" : {
+        "id" : "FCB002",
+        "nombre" : "FC Barcelona",
+        "barrio" : "Les Corts",
+        "nombreEntrenador" : "Xavi Hernández",
+        "jugadores" : [ {
+          "id" : "JFCB001",
+          "nombreCompleto" : "Robert Lewandowski",
+          "posicion" : "Delantero",
+          "numeroCamiseta" : 9,
+          "equipo" : "FCB002"
+        }, {
+          "id" : "JFCB002",
+          "nombreCompleto" : "Pedri González",
+          "posicion" : "Mediocampista",
+          "numeroCamiseta" : 8,
+          "equipo" : "FCB002"
+        } ],
+        "partidos" : [ "P001", {
+          "id" : "P003",
+          "equipoLocal" : "FCB002",
+          "equipoVisitante" : {
+            "id" : "ATM003",
+            "nombre" : "Atlético Madrid",
+            "barrio" : "Arganzuela",
+            "nombreEntrenador" : "Diego Simeone",
+            "jugadores" : [ {
+              "id" : "JATM001",
+              "nombreCompleto" : "Antoine Griezmann",
+              "posicion" : "Delantero",
+              "numeroCamiseta" : 7,
+              "equipo" : "ATM003"
+            }, {
+              "id" : "JATM002",
+              "nombreCompleto" : "Jan Oblak",
+              "posicion" : "Portero",
+              "numeroCamiseta" : 13,
+              "equipo" : "ATM003"
+            } ],
+            "partidos" : [ {
+              "id" : "P002",
+              "equipoLocal" : "RM001",
+              "equipoVisitante" : "ATM003",
+              "estadio" : "Cívitas Metropolitano",
+              "arbitro" : "Gil Manzano",
+              "golesLocal" : 1,
+              "golesVisitante" : 1,
+              "tarjetas" : [ {
+                "jugador" : "JATM001",
+                "tipo" : "Amarilla",
+                "minuto" : 30,
+                "motivo" : "Protesta"
+              }, {
+                "jugador" : "JRM001",
+                "tipo" : "Roja",
+                "minuto" : 80,
+                "motivo" : "Doble amarilla"
+              } ],
+              "faltas" : [ {
+                "jugadorQueCometio" : "JATM001",
+                "minuto" : 29,
+                "zonaCampo" : "Ataque",
+                "jugadorAfectado" : "JRM002",
+                "tarjetaAsociada" : "Amarilla"
+              }, {
+                "jugadorQueCometio" : "JRM001",
+                "minuto" : 79,
+                "zonaCampo" : "Defensa",
+                "jugadorAfectado" : "JATM001",
+                "tarjetaAsociada" : "Amarilla"
+              } ],
+              "goles" : [ {
+                "jugador" : "JRM001",
+                "minuto" : 15
+              }, {
+                "jugador" : "JATM001",
+                "minuto" : 40
+              } ]
+            }, "P003" ]
+          },
+          "estadio" : "Camp Nou",
+          "arbitro" : "Sánchez Martínez",
+          "golesLocal" : 2,
+          "golesVisitante" : 0,
+          "tarjetas" : [ ],
+          "faltas" : [ ],
+          "goles" : [ {
+            "jugador" : "JFCB001",
+            "minuto" : 5
+          }, {
+            "jugador" : "JFCB002",
+            "minuto" : 50
+          } ]
+        }, {
+          "id" : "123123",
+          "equipoLocal" : "FCB002",
+          "equipoVisitante" : "RM001",
+          "estadio" : "capm nou",
+          "arbitro" : "yo",
+          "golesLocal" : 0,
+          "golesVisitante" : 0,
+          "tarjetas" : [ {
+            "jugador" : "JRM002",
+            "tipo" : "Amarilla",
+            "minuto" : 231,
+            "motivo" : "3"
+          } ],
+          "faltas" : [ {
+            "jugadorQueCometio" : "JRM002",
+            "minuto" : 2342,
+            "zonaCampo" : "23424",
+            "jugadorAfectado" : "JFCB001",
+            "tarjetaAsociada" : null
+          } ],
+          "goles" : [ ]
+        } ]
+      },
+      "estadio" : "Santiago Bernabéu",
+      "arbitro" : "Mateu Lahoz",
+      "golesLocal" : 3,
+      "golesVisitante" : 2,
+      "tarjetas" : [ {
+        "jugador" : "JRM002",
+        "tipo" : "Amarilla",
+        "minuto" : 45,
+        "motivo" : "Falta táctica"
+      }, {
+        "jugador" : "JFCB001",
+        "tipo" : "Amarilla",
+        "minuto" : 60,
+        "motivo" : "Simulación"
+      } ],
+      "faltas" : [ {
+        "jugadorQueCometio" : "JRM002",
+        "minuto" : 44,
+        "zonaCampo" : "Mediocampo",
+        "jugadorAfectado" : "JFCB002",
+        "tarjetaAsociada" : "Amarilla"
+      }, {
+        "jugadorQueCometio" : "JFCB001",
+        "minuto" : 59,
+        "zonaCampo" : "Ataque",
+        "jugadorAfectado" : "JRM003",
+        "tarjetaAsociada" : "Amarilla"
+      } ],
+      "goles" : [ {
+        "jugador" : "JRM001",
+        "minuto" : 10
+      }, {
+        "jugador" : "JRM001",
+        "minuto" : 25
+      }, {
+        "jugador" : "JFCB001",
+        "minuto" : 35
+      }, {
+        "jugador" : "JRM002",
+        "minuto" : 70
+      }, {
+        "jugador" : "JFCB001",
+        "minuto" : 1
+      } ]
+    }, "P002", "123123" ]
+  }, "FCB002", "ATM003", {
+    "id" : "1",
+    "nombre" : "test",
+    "barrio" : "test",
+    "nombreEntrenador" : "test",
+    "jugadores" : [ {
+      "id" : "123",
+      "nombreCompleto" : "werwer",
+      "posicion" : "werwer",
+      "numeroCamiseta" : 12,
+      "equipo" : "1"
+    } ],
+    "partidos" : [ ]
+  } ],
+  "partidos" : [ "P001", "P002", "P003", "123123" ],
+  "tablaDePosiciones" : [ [ "Real Madrid", 5, 1, 2, 0, 4, 3, 3, 3 ], [ "FC Barcelona", 4, 1, 1, 1, 4, 3, 1, 1 ], [ "Atlético Madrid", 1, 0, 1, 1, 1, 3, 1, 1 ], [ "test", 0, 0, 0, 0, 0, 0, 0, 0 ] ]
+}
